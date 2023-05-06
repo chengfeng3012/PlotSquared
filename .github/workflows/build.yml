@@ -59,7 +59,7 @@ jobs:
           SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
         with:
           source-directory: 'Bukkit/build/docs/javadoc'
-          destination-github-username: 'IntellectualSites'
+          destination-github-username: 'chengfeng3012'
           destination-repository-name: 'plotsquared-javadocs'
           user-email: ${{ secrets.USER_EMAIL }}
           target-branch: main
