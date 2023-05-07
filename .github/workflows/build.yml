@@ -12,8 +12,11 @@ jobs:
           distribution: temurin
           java-version: 17
       - name: Build
-        run: ./gradlew build
+        run: |
+          ./gradlew build
+          clear
+          ls
       - uses: actions/upload-artifact@v3
         with:
           name: Downloads
-          path: build
+          path: '*'
