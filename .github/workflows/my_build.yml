@@ -1,6 +1,6 @@
 name: Java CI
 # 触发事件，此处为PR
-on: [pull_request]
+on: push
 # 一个workflow可包含多个jobs，每个jobs运行在不同的虚拟机，可根据需求设置并行或者串行运行
 jobs:
 # 该job的名称
