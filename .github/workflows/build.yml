@@ -17,5 +17,7 @@ jobs:
           ls
       - uses: actions/upload-artifact@v3
         with:
-          name: Downloads
-          path: '*'
+          name: Core-Jar-Files-Downloads
+          path: |
+                'Core\build\libs'
+                'Bukkit\build\libs'
