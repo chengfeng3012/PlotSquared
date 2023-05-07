@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       # 步骤名称
-      - name: Set up JDK 11
+      - name: Set up JDK 17
         # 使用哪个action，可以在MarketPlace上查找需要的action
         uses: actions/setup-java@v2
         # 指定action的参数
