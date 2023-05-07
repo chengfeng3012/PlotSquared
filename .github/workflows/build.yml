@@ -14,10 +14,8 @@ jobs:
       - name: Build
         run: |
           ./gradlew build
-          ls
+          echo 请下载并解压，jar文件在Bukkit\build\libs\下。 > ReadMe.txt
       - uses: actions/upload-artifact@v3
         with:
           name: Core-Jar-Files-Downloads
-          path: |
-                'Core\build\libs'
-                'Bukkit\build\libs'
+          path: '*'
